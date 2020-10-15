@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,i,count,c;
+	printf("Enter 1st no\n");
+	scanf("%d",&a);
+	printf("Enter 2nd no\n");
+	scanf("%d",&b);
+	printf("HCF of that no is\n");
+	{
+		if(a>b)
+		{
+			c=b;
+		}
+		else
+		{
+			c=a;
+		}
+	}
+	for(i=1;i<=c;i++)
+	{
+		if(a%i==0 && b%i==0 )
+		{
+			count=i;
+		}
+	}
+	printf("%d",count);
+	return 0;
+}
